@@ -35,7 +35,7 @@ import mlflow
 
 # COMMAND ----------
 
-mlflow.set_experiment(f"/Users/avinash.sooriyarachchi@databricks.com/Dolly_Llama-7b_auto")
+mlflow.set_experiment(f"/Users/<your-user-name>/Dolly_Llama-7b_auto")
 
 class PeftSavingCallback(TrainerCallback):
     def on_save(self, args, state, control, **kwargs):
@@ -58,7 +58,7 @@ lora_config = LoraConfig(
     task_type="CAUSAL_LM",
 )
 
-base_dir = "/dbfs/FileStore/shared_uploads/avinash.sooriyarachchi@databricks.com/<your_subdirectory>/"
+base_dir = "/dbfs/FileStore/shared_uploads/<your-user-name>/<your_subdirectory>/"
 
 per_device_train_batch_size = 4
 gradient_accumulation_steps = 4
