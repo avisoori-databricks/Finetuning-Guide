@@ -1,5 +1,5 @@
 # DollyLlama-7B
-Code for finetuning openllama7bv2 model on instruction following datasets with QLoRA
+Code for finetuning open_llama_7b_v2 model on a refined instruction following datasets with QLoRA
 
 
 ![alt text](https://github.com/avisoori-databricks/Dolly_llama/blob/main/dolly_llama_chilling.png?raw=true)
