@@ -26,6 +26,6 @@ Tips for effective training with QLoRA (primarily avoiding overfitting and ensur
 3. Upcast the layer norms to float 32 for more stable training
 4. Use a memory efficient and stable optimizer such as ADAMW
 
-And most importantly, once the model is trained use contrastive search for generating text. Control the alpha and k parameters to tune the output quality. For performing well with both code generation and coherent non-repetitive text generation alpha=0.5 and k=4 seemed to perform the best.
+And most importantly, once the model is trained use contrastive search for generating text. Control the alpha and k parameters to tune the output quality. For performing well with both code generation and coherent non-repetitive text generation alpha=0.5 and k=4 seemed to perform the best. Merge the adapter layers to the base models to improve inference latency.
 
 Model weights, and a blog detailed training guidelines, observations and model performance is on the way.
