@@ -1,4 +1,4 @@
-# Dolly_llama
+# DollyLlama-7B
 Code for finetuning openllama7bv2 model on instruction following datasets with QLoRA
 
 
