@@ -22,7 +22,7 @@ These were downloaded from the Hugging Face Hub cleaned, augmented to conform to
 
 Tips for effective training with QLoRA (primarily avoiding overfitting and ensuring generalization when using LoRA):
 1. target_modules should include all linear layers instead of just the attention blocks. This increases training time substantially, but still much faster than full finetuning
-2. Opt for higher rank of the low rank matrices e.g. 16 vs 8
+2. Opt for a higher rank for the low rank matrices e.g. r=16 vs r=8
 3. Upcast the layer norms to float 32 for more stable training
 4. Use a memory efficient and stable optimizer such as ADAMW
 
