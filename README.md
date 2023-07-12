@@ -11,7 +11,7 @@ b-mc2/sql-create-context - i.e. WikiSQL and Spider (a ~4500 sample of this with 
 
 codeAlpaca-20k - cc-by-4.0 license according to repo: https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k
 
-mosaicml/dolly_hhrlhf - commercially permissible licesne
+mosaicml/dolly_hhrlhf - commercially permissible license
 
 qwedsacf/grade-school-math-instructions - MIT License
 
