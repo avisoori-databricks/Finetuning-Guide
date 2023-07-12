@@ -24,7 +24,7 @@ Tips for effective training with QLoRA (primarily avoiding overfitting and ensur
 1. target_modules should include all linear layers instead of just the attention blocks. This increases training time substantially, but still much faster than full finetuning
 2. Opt for a higher rank for the low rank matrices e.g. r=16 vs r=8
 3. Upcast the layer norms to float 32 for more stable training
-4. Use a memory efficient and stable optimizer such as ADAMW
+4. Use a memory efficient and stable optimizer such as AdamW
 
 And most importantly, once the model is trained, use contrastive search for generating text. Control the alpha and k parameters to tune the output quality. For performing well with both code generation and coherent non-repetitive text generation alpha=0.5 and k=4 seemed to perform the best. Merge the adapter layers to the base models to improve inference latency.
 
