@@ -31,19 +31,21 @@ And most importantly, once the model is trained use contrastive search for gener
 Model weights, and a blog detailed training guidelines, observations and model performance is on the way.
 
 Inputs follow the Alapaca format: 
-
+```
 Below is an instruction that describes a task. Write a response that appropriately completes the request.
 
 ### Instruction:
 {instruction}
 
 ### Response:
+```
 
 and in particular, for text to SQL the natural language question has to be formated with a prefix and schema as indicated in the following example:
 
 Below is an instruction that describes a task. Write a response that appropriately completes the request.
-
+```
 ### Instruction:
 Generate SQL query: How many Porsche’s were sold in 2022, given the following schema: car_brands (Brand STRING, Brand_id STRING), car_sales (sales INTEGER, year INTEGER, brand_id STRING)
 
 ### Response:
+```
