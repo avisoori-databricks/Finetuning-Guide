@@ -29,3 +29,21 @@ Tips for effective training with QLoRA (primarily avoiding overfitting and ensur
 And most importantly, once the model is trained use contrastive search for generating text. Control the alpha and k parameters to tune the output quality. For performing well with both code generation and coherent non-repetitive text generation alpha=0.5 and k=4 seemed to perform the best. Merge the adapter layers to the base models to improve inference latency.
 
 Model weights, and a blog detailed training guidelines, observations and model performance is on the way.
+
+Inputs follow the Alapaca format: 
+
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+{instruction}
+
+### Response:
+
+and in particular, for text to SQL the natural language question has to be formated with a prefix and schema as indicated in the following example:
+
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+Generate SQL query: How many Porsche’s were sold in 2022, given the following schema: car_brands (Brand STRING, Brand_id STRING), car_sales (sales INTEGER, year INTEGER, brand_id STRING)
+
+### Response:
