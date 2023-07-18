@@ -21,7 +21,7 @@ All these datasets have commercially permissible licenses
 These were downloaded from the Hugging Face Hub cleaned, augmented to conform to the Alpaca intruction response format, deduped before use in finetuning. The total size of the training data set was 72763 examples.
 
 Tips for effective training with QLoRA (primarily avoiding overfitting and ensuring generalization when using LoRA):
-1. target_modules should include all linear layers instead of just the attention blocks. This increases training time substantially, but still much faster than full finetuning
+1. target_modules should include all linear layers instead of just the attention blocks. This increases training time substantially, but still much faster than full finetuning (highest impact)
 2. Opt for a higher rank for the low rank matrices e.g. r=16 vs r=8
 3. Upcast the layer norms to float 32 for more stable training
 4. Use a memory efficient and stable optimizer such as AdamW
