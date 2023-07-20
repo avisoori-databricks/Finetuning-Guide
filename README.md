@@ -9,13 +9,13 @@ Datasets used here:
 
 b-mc2/sql-create-context - i.e. WikiSQL and Spider (a ~4500 sample of this with table names) - BSD-3-Clause license and cc-by-4.0 respectively
 
-codeAlpaca-20k - cc-by-4.0 license according to repo: https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k
+codeparrot/self-instruct-starcoder - bigscience-openrail-m 
 
 mosaicml/dolly_hhrlhf - commercially permissible license
 
 qwedsacf/grade-school-math-instructions - MIT License
 
-All these datasets have commercially permissible licenses
+All these datasets have commercially permissible licenses (with differing terms. Please inspect each license to make sure your use case agrees with these terms)
 
 
 These were downloaded from the Hugging Face Hub cleaned, augmented to conform to the Alpaca intruction response format, deduped before use in finetuning. The total size of the training data set was 72763 examples.
@@ -49,3 +49,5 @@ Generate SQL query: How many Porsche’s were sold in 2022, given the following 
 
 ### Response:
 ```
+The process of building a text to sql system with Flan-T5 is highlighted in the following link:https://github.com/avisoori-databricks/text-to-insights
+Please use this model instead of the finetuned Flan-T5 as the results are much better.
