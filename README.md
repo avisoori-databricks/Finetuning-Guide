@@ -49,5 +49,5 @@ Generate SQL query: How many Porsche’s were sold in 2022, given the following 
 
 ### Response:
 ```
-The process of building a text to sql system with Flan-T5 is highlighted in the following link:https://github.com/avisoori-databricks/text-to-insights
-Please use this model instead of the finetuned Flan-T5 as the results are much better.
+The process of building a text to sql system with Flan-T5 is highlighted in the following link:https://github.com/avisoori-databricks/text-to-insights.
+Please use a model finetuned using code in this repo instead of the finetuned Flan-T5 model as the results are much better.
