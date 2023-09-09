@@ -1,4 +1,5 @@
-# DollyLlama-7B
+# Tuning the Finetuning with QLoRA
+Formerly DollyLlaMA till it became a social media handle for a bunch of random people :D
 Code for finetuning open_llama_7b_v2 model on a refined instruction following datasets with QLoRA
 
 
